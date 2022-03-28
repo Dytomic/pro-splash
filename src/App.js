@@ -38,7 +38,7 @@ function useWindowDimensions() {
 }
 
 function App() {
-  const { height } = useWindowDimensions();
+  const { width, height } = useWindowDimensions();
 
   let LINK_INSTA = 'https://www.instagram.com/pirateraids.online'
   let LINK_DISCORD = 'https://discord.gg/cmw8ZRzBrg'
@@ -60,17 +60,17 @@ function App() {
         </a>
       </div>
 
-      <div className='portrait' style={{ height: `${height}px`, width: '100vw', backgroundImage: `url(${mobileBackground})`, backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%' }} >
+      <div className='portrait' style={{ height: `${height}px`, width: `${width}px`, backgroundImage: `url(${mobileBackground})`, backgroundRepeat: 'no-repeat', backgroundSize: `${width}px ${height}px` }} >
         <a href={LINK_INSTA}>
-          <img alt='' style={{ position: 'absolute', top: '88.59%', left: '8.61%', height: '8.98%', width: '15.97%' }} src={instaEffect} />
+          <img alt='' style={{ position: 'absolute', top: `${0.8859 * height}px`, left: `${0.0861 * width}px`, height: `${0.0898 * height}px`, width: `${0.1597 * width}px` }} src={instaEffect} />
         </a>
 
         <a href={LINK_DISCORD}>
-          <img alt='' style={{ position: 'absolute', top: '88.59%', left: '41.8%', height: '8.98%', width: '15.97%' }} src={discordEffect} />
+          <img alt='' style={{ position: 'absolute', top: `${0.8859 * height}px`, left: `${0.418 * width}px`, height: `${0.0898 * height}px`, width: `${0.1597 * width}px` }} src={discordEffect} />
         </a>
 
         <a href={LINK_FB}>
-          <img alt='' style={{ position: 'absolute', top: '88.59%', left: '75.27%', height: '8.98%', width: '15.97%' }} src={fbEffect} />
+          <img alt='' style={{ position: 'absolute', top: `${0.8859 * height}px`, left: `${0.7527 * width}px`, height: `${0.0898 * height}px`, width: `${0.1597 * width}px` }} src={fbEffect} />
         </a>
       </div>
     </div>
