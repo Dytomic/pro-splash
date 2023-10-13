@@ -8,7 +8,6 @@ Splash page for Pirate Raids Online, which provided links to our social media pr
 
 ## Screenshots
 
-<p style="display:flex;gap:16px;justify-content:center;align-items:center;">
-  <img src="./pro-splash.png" width=256 height=120 />
-  <img src="./pro-splash-mobile.png" width=128 />
-</p>
+<img src="./pro-splash.png" width=256 height=120 />
+
+<img src="./pro-splash-mobile.png" width=128 />
